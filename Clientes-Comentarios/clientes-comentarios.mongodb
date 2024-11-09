@@ -1,0 +1,63 @@
+// Usar la base de datos
+use("StylishSteps")
+
+// Crear la colección de clientes
+db.createCollection("clientesComentarios", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validación embebida del objeto clientes y comentarios.',
+            required: ['nombre', 'apellidos', 'correo_electronico'],
+            properties: {
+
+                id_cliente: { 
+                    bsonType: 'int',
+                    description: 'Clave única del cliente',
+                },
+
+                nombre: { 
+                    bsonType: 'string',
+                    description: 'Nombre del cliente',
+                },
+
+                apellidos: {
+                    bsonType: 'string',
+                    description: 'Apellidos del cliente'
+                },
+
+                correo_electronico: { 
+                    bsonType: 'string',
+                    description: 'Correo electronico del cliente',
+                    pattern: "^[A-Za-z\\d.-]{1,}@[A-Za-z\\d.-]{1,}[.][A-Za-z\\d.-]{1,}$"
+                },
+
+                telefono: {
+                    bsonType: 'string',
+                    description: 'Teléfono del cliente',
+                    //uniqueItems: true // No acepta teléfonos repetidos
+                },
+
+                // Definición de comentarios como un arreglo de objetos
+                Comentarios: {
+                    bsonType: 'array',
+                    description: 'Lista de comentarios del cliente',
+                    items: {
+                        bsonType: 'object',
+                        title: 'Validación del objeto comentarios',
+                        required: ['texto_comentario', 'id_comentario', 'id_cliente'],
+                        properties: {
+                            id_comentario: { bsonType: 'int' },
+                            id_cliente: { bsonType: 'int' },
+                            texto_comentario: { bsonType: 'string' },
+                            fecha_comentario: { bsonType: 'string' }
+                        }
+                    }
+                }
+            }
+        }
+    }
+})
+
+
+
+

@@ -1,0 +1,286 @@
+use("StylishSteps");
+
+db.materialesProveedores.insertMany(
+    [
+        {
+            "id_material": 3,
+            "nombre_material": "Pegamento blanco",
+            "cantidad_disponible": 200,
+            "Proveedor": [
+                {
+                    "id_proveedor": 1,
+                    "nombre": "Proveedor A",
+                    "apellidos": "Garcia",
+                    "correo_electronico": "proveedorA@ejemplo.com",
+                    "telefono": "5551234567"
+                }
+            ]
+        },
+        {
+            "id_material": 4,
+            "nombre_material": "Pegamento rojo",
+            "cantidad_disponible": 300,
+            "Proveedor": [
+                {
+                    "id_proveedor": 2,
+                    "nombre": "Proveedor B",
+                    "apellidos": "Martinez",
+                    "correo_electronico": "proveedorB@ejemplo.com",
+                    "telefono": "5552345678"
+                }
+            ]
+        },
+        {
+            "id_material": 5,
+            "nombre_material": "Tachuelas",
+            "cantidad_disponible": 150,
+            "Proveedor": [
+                {
+                    "id_proveedor": 3,
+                    "nombre": "Proveedor C",
+                    "apellidos": "Hernandez",
+                    "correo_electronico": "proveedorC@ejemplo.com",
+                    "telefono": "5553456789"
+                }
+            ]
+        },
+        {
+            "id_material": 6,
+            "nombre_material": "Hormas",
+            "cantidad_disponible": 100,
+            "Proveedor": [
+                {
+                    "id_proveedor": 4,
+                    "nombre": "Proveedor D",
+                    "apellidos": "Lopez",
+                    "correo_electronico": "proveedorD@ejemplo.com",
+                    "telefono": "5554567890"
+                }
+            ]
+        },
+        {
+            "id_material": 7,
+            "nombre_material": "Suela de goma",
+            "cantidad_disponible": 50,
+            "Proveedor": [
+                {
+                    "id_proveedor": 5,
+                    "nombre": "Proveedor E",
+                    "apellidos": "Perez",
+                    "correo_electronico": "proveedorE@ejemplo.com",
+                    "telefono": "5555678901"
+                }
+            ]
+        },
+        {
+            "id_material": 8,
+            "nombre_material": "Vaqueta",
+            "cantidad_disponible": 250,
+            "Proveedor": [
+                {
+                    "id_proveedor": 6,
+                    "nombre": "Proveedor F",
+                    "apellidos": "Ramirez",
+                    "correo_electronico": "proveedorF@ejemplo.com",
+                    "telefono": "5556789012"
+                }
+            ]
+        },
+        {
+            "id_material": 9,
+            "nombre_material": "Laca",
+            "cantidad_disponible": 180,
+            "Proveedor": [
+                {
+                    "id_proveedor": 7,
+                    "nombre": "Proveedor G",
+                    "apellidos": "Sanchez",
+                    "correo_electronico": "proveedorG@ejemplo.com",
+                    "telefono": "5557890123"
+                }
+            ]
+        },
+        {
+            "id_material": 10,
+            "nombre_material": "Brochas",
+            "cantidad_disponible": 75,
+            "Proveedor": [
+                {
+                    "id_proveedor": 8,
+                    "nombre": "Proveedor H",
+                    "apellidos": "Torres",
+                    "correo_electronico": "proveedorH@ejemplo.com",
+                    "telefono": "5558901234"
+                }
+            ]
+        },
+        {
+            "id_material": 11,
+            "nombre_material": "Suajes",
+            "cantidad_disponible": 120,
+            "Proveedor": [
+                {
+                    "id_proveedor": 9,
+                    "nombre": "Proveedor I",
+                    "apellidos": "Vazquez",
+                    "correo_electronico": "proveedorI@ejemplo.com",
+                    "telefono": "5559012345"
+                }
+            ]
+        },
+        {
+            "id_material": 12,
+            "nombre_material": "Martillo",
+            "cantidad_disponible": 200,
+            "Proveedor": [
+                {
+                    "id_proveedor": 10,
+                    "nombre": "Proveedor J",
+                    "apellidos": "Morales",
+                    "correo_electronico": "proveedorJ@ejemplo.com",
+                    "telefono": "5550123456"
+                }
+            ]
+        },
+        {
+            "id_material": 13,
+            "nombre_material": "Bolsas",
+            "cantidad_disponible": 220,
+            "Proveedor": [
+                {
+                    "id_proveedor": 11,
+                    "nombre": "Proveedor K",
+                    "apellidos": "Garcia",
+                    "correo_electronico": "proveedorK@ejemplo.com",
+                    "telefono": "5551234568"
+                }
+            ]
+        },
+        {
+            "id_material": 14,
+            "nombre_material": "Cajas de cart n",
+            "cantidad_disponible": 310,
+            "Proveedor": [
+                {
+                    "id_proveedor": 12,
+                    "nombre": "Proveedor L",
+                    "apellidos": "Martinez",
+                    "correo_electronico": "proveedorL@ejemplo.com",
+                    "telefono": "5552345679"
+                }
+            ]
+        },
+        {
+            "id_material": 15,
+            "nombre_material": "Peri dico",
+            "cantidad_disponible": 160,
+            "Proveedor": [
+                {
+                    "id_proveedor": 13,
+                    "nombre": "Proveedor M",
+                    "apellidos": "Hernandez",
+                    "correo_electronico": "proveedorM@ejemplo.com",
+                    "telefono": "5553456790"
+                }
+            ]
+        },
+        {
+            "id_material": 16,
+            "nombre_material": "Boston l quido",
+            "cantidad_disponible": 110,
+            "Proveedor": [
+                {
+                    "id_proveedor": 14,
+                    "nombre": "Proveedor N",
+                    "apellidos": "Lopez",
+                    "correo_electronico": "proveedorN@ejemplo.com",
+                    "telefono": "5554567901"
+                }
+            ]
+        },
+        {
+            "id_material": 17,
+            "nombre_material": "Celtec",
+            "cantidad_disponible": 60,
+            "Proveedor": [
+                {
+                    "id_proveedor": 15,
+                    "nombre": "Proveedor O",
+                    "apellidos": "Perez",
+                    "correo_electronico": "proveedorO@ejemplo.com",
+                    "telefono": "5555679012"
+                }
+            ]
+        },
+        {
+            "id_material": 18,
+            "nombre_material": "Forro de tela",
+            "cantidad_disponible": 270,
+            "Proveedor": [
+                {
+                    "id_proveedor": 16,
+                    "nombre": "Proveedor P",
+                    "apellidos": "Ramirez",
+                    "correo_electronico": "proveedorP@ejemplo.com",
+                    "telefono": "5556789123"
+                }
+            ]
+        },
+        {
+            "id_material": 19,
+            "nombre_material": "Tiras de cuero",
+            "cantidad_disponible": 190,
+            "Proveedor": [
+                {
+                    "id_proveedor": 17,
+                    "nombre": "Proveedor Q",
+                    "apellidos": "Sanchez",
+                    "correo_electronico": "proveedorQ@ejemplo.com",
+                    "telefono": "5557891234"
+                }
+            ]
+        },
+        {
+            "id_material": 20,
+            "nombre_material": "Plantillas de refuerzo",
+            "cantidad_disponible": 80,
+            "Proveedor": [
+                {
+                    "id_proveedor": 18,
+                    "nombre": "Proveedor R",
+                    "apellidos": "Torres",
+                    "correo_electronico": "proveedorR@ejemplo.com",
+                    "telefono": "5558902345"
+                }
+            ]
+        },
+        {
+            "id_material": 21,
+            "nombre_material": "Material anti-deslizante",
+            "cantidad_disponible": 130,
+            "Proveedor": [
+                {
+                    "id_proveedor": 19,
+                    "nombre": "Proveedor S",
+                    "apellidos": "Vazquez",
+                    "correo_electronico": "proveedorS@ejemplo.com",
+                    "telefono": "5559013456"
+                }
+            ]
+        },
+        {
+            "id_material": 22,
+            "nombre_material": "Cordones de nylon",
+            "cantidad_disponible": 210,
+            "Proveedor": [
+                {
+                    "id_proveedor": 20,
+                    "nombre": "Proveedor T",
+                    "apellidos": "Morales",
+                    "correo_electronico": "proveedorT@ejemplo.com",
+                    "telefono": "5550124567"
+                }
+            ]
+        }
+    ]
+)

@@ -1,0 +1,21 @@
+use("StylishSteps");
+
+db.categorias.insertMany(
+    [
+        {
+            "id_categoria": 1,
+            "nombre_categoria": "Dama",
+            "descripcion": "Huaraches elegantes y c modos para mujer"
+        },
+        {
+            "id_categoria": 2,
+            "nombre_categoria": "Caballero",
+            "descripcion": "Huaraches resistentes y cl sicos para hombre"
+        },
+        {
+            "id_categoria": 3,
+            "nombre_categoria": "Nino",
+            "descripcion": "Huaraches coloridos y ligeros para ni os"
+        }
+    ]
+)

@@ -1,0 +1,306 @@
+use("StylishSteps");
+
+db.clientesComentarios.insertMany(
+    [
+        {
+            "id_cliente": 1,
+            "nombre": "Juan",
+            "apellidos": "Perez",
+            "correo_electronico": "juan.perez@example.com",
+            "telefono": "5551234567",
+            "Comentarios": [
+                {
+                    "id_comentario": 1,
+                    "id_cliente": 1,
+                    "texto_comentario": "Muy comodos, excelente calidad.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 2,
+            "nombre": "Ana",
+            "apellidos": "Garcia",
+            "correo_electronico": "ana.garcia@example.com",
+            "telefono": "5552345678",
+            "Comentarios": [
+                {
+                    "id_comentario": 2,
+                    "id_cliente": 2,
+                    "texto_comentario": "Me encantaron, perfectos para el verano.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 3,
+            "nombre": "Luis",
+            "apellidos": "Mendoza",
+            "correo_electronico": "luis.mendoza@example.com",
+            "telefono": "5553456789",
+            "Comentarios": [
+                {
+                    "id_comentario": 3,
+                    "id_cliente": 3,
+                    "texto_comentario": "La suela es resistente, los recomiendo.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 4,
+            "nombre": "Sof a",
+            "apellidos": "Martinez",
+            "correo_electronico": "sofia.martinez@example.com",
+            "telefono": "5554567890",
+            "Comentarios": [
+                {
+                    "id_comentario": 4,
+                    "id_cliente": 4,
+                    "texto_comentario": "Lindos, pero el tamano no me quedo  muy bien.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 5,
+            "nombre": "Carlos",
+            "apellidos": "Fernandez",
+            "correo_electronico": "carlos.fernandez@example.com",
+            "telefono": "5555678901",
+            "Comentarios": [
+                {
+                    "id_comentario": 5,
+                    "id_cliente": 5,
+                    "texto_comentario": "Perfectos para usar en el dia a dia.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 6,
+            "nombre": "Laura",
+            "apellidos": "Gomez",
+            "correo_electronico": "laura.gomez@example.com",
+            "telefono": "5556789012",
+            "Comentarios": [
+                {
+                    "id_comentario": 6,
+                    "id_cliente": 6,
+                    "texto_comentario": "El diseno artesanal es  unico.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 7,
+            "nombre": "Pedro",
+            "apellidos": "Hernandez",
+            "correo_electronico": "pedro.hernandez@example.com",
+            "telefono": "5557890123",
+            "Comentarios": [
+                {
+                    "id_comentario": 7,
+                    "id_cliente": 7,
+                    "texto_comentario": "Excelente servicio, el envio fue rapido.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 8,
+            "nombre": "Carmen",
+            "apellidos": "Lopez",
+            "correo_electronico": "carmen.lopez@example.com",
+            "telefono": "5558901234",
+            "Comentarios": [
+                {
+                    "id_comentario": 8,
+                    "id_cliente": 8,
+                    "texto_comentario": "Un poco caros, pero valen la pena.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 9,
+            "nombre": "Ra l",
+            "apellidos": "Ramirez",
+            "correo_electronico": "raul.ramirez@example.com",
+            "telefono": "5559012345",
+            "Comentarios": [
+                {
+                    "id_comentario": 9,
+                    "id_cliente": 9,
+                    "texto_comentario": "Son muy duraderos, los usar  por mucho tiempo.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 10,
+            "nombre": "Marta",
+            "apellidos": "Diaz",
+            "correo_electronico": "marta.diaz@example.com",
+            "telefono": "5550123456",
+            "Comentarios": [
+                {
+                    "id_comentario": 10,
+                    "id_cliente": 10,
+                    "texto_comentario": "El color no era como esperaba, pero son comodos.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 11,
+            "nombre": "Alejandro",
+            "apellidos": "Ruiz",
+            "correo_electronico": "alejandro.ruiz@example.com",
+            "telefono": "5551231234",
+            "Comentarios": [
+                {
+                    "id_comentario": 11,
+                    "id_cliente": 11,
+                    "texto_comentario": "Me gusta que sean hechos a mano.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 12,
+            "nombre": "Paola",
+            "apellidos": "Sanchez",
+            "correo_electronico": "paola.sanchez@example.com",
+            "telefono": "5552342345",
+            "Comentarios": [
+                {
+                    "id_comentario": 12,
+                    "id_cliente": 12,
+                    "texto_comentario": "Muy ligeros, ideales para el calor.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 13,
+            "nombre": "Javier",
+            "apellidos": "Flores",
+            "correo_electronico": "javier.flores@example.com",
+            "telefono": "5553453456",
+            "Comentarios": [
+                {
+                    "id_comentario": 13,
+                    "id_cliente": 13,
+                    "texto_comentario": "Me llego un par con defecto, pero lo solucionaron rapido.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 14,
+            "nombre": "Maria",
+            "apellidos": "Ortiz",
+            "correo_electronico": "maria.ortiz@example.com",
+            "telefono": "5554564567",
+            "Comentarios": [
+                {
+                    "id_comentario": 14,
+                    "id_cliente": 14,
+                    "texto_comentario": "Tienen gran variedad de modelos, elegi  los bordados.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 15,
+            "nombre": "Roberto",
+            "apellidos": "Cruz",
+            "correo_electronico": "roberto.cruz@example.com",
+            "telefono": "5555675678",
+            "Comentarios": [
+                {
+                    "id_comentario": 15,
+                    "id_cliente": 15,
+                    "texto_comentario": "Lindos, pero me hubiera gustado una suela mas comoda.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 16,
+            "nombre": "Claudia",
+            "apellidos": "Nunez",
+            "correo_electronico": "claudia.nunez@example.com",
+            "telefono": "5556786789",
+            "Comentarios": [
+                {
+                    "id_comentario": 16,
+                    "id_cliente": 16,
+                    "texto_comentario": "Perfectos para combinar con cualquier atuendo.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 17,
+            "nombre": "Ricardo",
+            "apellidos": "Castillo",
+            "correo_electronico": "ricardo.castillo@example.com",
+            "telefono": "5557897890",
+            "Comentarios": [
+                {
+                    "id_comentario": 17,
+                    "id_cliente": 17,
+                    "texto_comentario": "Muy bonitos, los volver a comprar.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 18,
+            "nombre": "Gabriela",
+            "apellidos": "Reyes",
+            "correo_electronico": "gabriela.reyes@example.com",
+            "telefono": "5558908901",
+            "Comentarios": [
+                {
+                    "id_comentario": 18,
+                    "id_cliente": 18,
+                    "texto_comentario": "El diseno es tal como en la foto.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 19,
+            "nombre": "Jose",
+            "apellidos": "Ibarra",
+            "correo_electronico": "jose.ibarra@example.com",
+            "telefono": "5559019012",
+            "Comentarios": [
+                {
+                    "id_comentario": 19,
+                    "id_cliente": 19,
+                    "texto_comentario": "Un clasico que nunca pasa de moda.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        },
+        {
+            "id_cliente": 20,
+            "nombre": "Adriana",
+            "apellidos": "Silva",
+            "correo_electronico": "adriana.silva@example.com",
+            "telefono": "5550120123",
+            "Comentarios": [
+                {
+                    "id_comentario": 20,
+                    "id_cliente": 20,
+                    "texto_comentario": "Muy satisfecho con la compra.",
+                    "fecha_comentario": "2024-10-09"
+                }
+            ]
+        }
+    ] 
+)

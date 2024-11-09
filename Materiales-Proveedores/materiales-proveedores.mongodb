@@ -1,0 +1,53 @@
+// Usar la base de datos
+use("StylishSteps")
+
+// Crear la colección de materiales
+db.createCollection("materialesProveedores", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validación embebida del objeto materiales y proveedores.',
+            required: ['nombre_material'],
+            properties: {
+
+                id_material: { 
+                    bsonType: 'int',
+                    description: 'Clave única para identificar cada material',
+                },
+
+                nombre_material: { 
+                    bsonType: 'string',
+                    description: 'Nombre del material utilizado en el producto',
+                },
+
+                cantidad_disponible: {
+                    bsonType: 'int',
+                    description: 'Especifica la cantidad que tenemos de cada material'
+                },
+
+                // Definición de Proveedores como un arreglo de objetos
+                Proveedores: {
+                    bsonType: 'array',
+                    description: 'Lista de proveedores para el material',
+                    items: {
+                        bsonType: 'object',
+                        title: 'Validación del objeto proveedores',
+                        required: ['id_proveedor'],
+                        properties: {
+                            id_proveedor: { bsonType: 'int' },
+                            nombre: { bsonType: 'string' },
+                            apellidos: { bsonType: 'string' },
+                            correo_electronico: { 
+                                bsonType: 'string',
+                                description: 'Correo electrónico del proveedor',
+                                pattern: "^[A-Za-z\\d.-]+@[A-Za-z\\d.-]+\\.[A-Za-z]+$"
+                            },
+                            telefono: { bsonType: 'string' },
+                            nombre_compania: { bsonType: 'string' }
+                        }
+                    }
+                }
+            }
+        }
+    }
+})

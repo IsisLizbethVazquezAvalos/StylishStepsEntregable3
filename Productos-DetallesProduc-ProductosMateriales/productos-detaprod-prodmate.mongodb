@@ -1,0 +1,71 @@
+//Usar la base de datos
+// Usar la base de datos
+use("StylishSteps")
+
+// Crear la colección de productos
+db.createCollection("productosDetallesproductosProductosmateriales", {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validación embebida del objeto productos, detalles-productos y productos_materiales.',
+            required: ['id_producto'],
+            properties: {
+
+                id_producto: { 
+                    bsonType: 'int',
+                    description: 'Clave única para identificar cada producto',
+                },
+
+                id_categoria: { 
+                    bsonType: 'int',
+                    description: 'Clave única para identificar la categoría a la que pertenece ese producto',
+                },
+
+                nombre_producto: { bsonType: 'string' },
+
+                precio: { 
+                    bsonType: 'int',
+                    description: 'Precio del producto',
+                },
+
+                stock_disponible: { 
+                    bsonType: 'int',
+                    description: 'Cantidad disponible del producto',
+                },
+
+                descontinuados: { bsonType: 'int' },
+
+                // Aquí se valida la colección Detalles_Productos como un arreglo de objetos
+                Detalles_Productos: {
+                    bsonType: 'array',
+                    items: {
+                        bsonType: 'object',
+                        properties: {
+                            id_detalle_producto: { bsonType: 'int' },
+                            descripcion: { bsonType: 'string' },
+                            talla: { bsonType: 'int' },
+                            color: { bsonType: 'string' },
+                        }
+                    }
+                },
+
+                // Aquí se valida la colección Productos_Materiales como un arreglo de objetos
+                Productos_Materiales: {
+                    bsonType: 'array',
+                    items: {
+                        bsonType: 'object',
+                        title: 'Validación del objeto productos-materiales',
+                        required: ['id_producto_materiales'],
+                        properties: {
+                            id_producto_materiales: { bsonType: 'int' },
+                            id_material: { bsonType: 'int' },
+                            cantidad_usada: { bsonType: 'int' },
+                            costo_material: { bsonType: 'int' },
+                            unidad_medida: { bsonType: 'string' }
+                        }
+                    }
+                }
+            }
+        }
+    }
+})

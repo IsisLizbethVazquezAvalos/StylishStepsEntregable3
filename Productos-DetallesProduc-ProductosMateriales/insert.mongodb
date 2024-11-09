@@ -1,0 +1,283 @@
+use("StylishSteps");
+
+db.productosDetallesproductosProductosmateriales.insertMany(
+    [
+        {
+            "id_producto": 1,
+            "id_categoria": 1,
+            "nombre_producto": "Huarache Bordado",
+            "precio": 1200,
+            "stock_disponible": 50,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 1,
+                    "descripcion": "Huarache bordado colorido",
+                    "talla": 42,
+                    "color": "Negro"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 2,
+                    "id_material": 3,
+                    "cantidad_usada": 500,
+                    "costo_material": 200,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 10,
+                    "id_material": 9,
+                    "cantidad_usada": 50,
+                    "costo_material": 200,
+                    "unidad_medida": "uds"
+                },
+                {
+                    "id_producto_materiales": 18,
+                    "id_material": 13,
+                    "cantidad_usada": 750,
+                    "costo_material": 800,
+                    "unidad_medida": "ml"
+                }
+            ]
+        },
+        {
+            "id_producto": 2,
+            "id_categoria": 2,
+            "nombre_producto": "Huarache Troquelado",
+            "precio": 600,
+            "stock_disponible": 100,
+            "descontinuados": 1,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 2,
+                    "descripcion": "Huarache troquelado moderno",
+                    "talla": 40,
+                    "color": "Azul"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 3,
+                    "id_material": 5,
+                    "cantidad_usada": 2,
+                    "costo_material": 400,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 11,
+                    "id_material": 10,
+                    "cantidad_usada": 200,
+                    "costo_material": 80,
+                    "unidad_medida": "uds"
+                },
+                {
+                    "id_producto_materiales": 19,
+                    "id_material": 17,
+                    "cantidad_usada": 450,
+                    "costo_material": 450,
+                    "unidad_medida": "ml"
+                }
+            ]
+        },
+        {
+            "id_producto": 3,
+            "id_categoria": 3,
+            "nombre_producto": "Huarache L ser",
+            "precio": 1500,
+            "stock_disponible": 30,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 3,
+                    "descripcion": "Huarache l ser colorido",
+                    "talla": 43,
+                    "color": "Tang"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 4,
+                    "id_material": 4,
+                    "cantidad_usada": 300,
+                    "costo_material": 300,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 12,
+                    "id_material": 22,
+                    "cantidad_usada": 400,
+                    "costo_material": 200,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 20,
+                    "id_material": 19,
+                    "cantidad_usada": 500,
+                    "costo_material": 400,
+                    "unidad_medida": "ml"
+                }
+            ]
+        },
+        {
+            "id_producto": 4,
+            "id_categoria": 1,
+            "nombre_producto": "Huarache Alpargata",
+            "precio": 1800,
+            "stock_disponible": 20,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 4,
+                    "descripcion": "Huarache alpargata elegante",
+                    "talla": 38,
+                    "color": "Beige"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 5,
+                    "id_material": 5,
+                    "cantidad_usada": 500,
+                    "costo_material": 700,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 13,
+                    "id_material": 13,
+                    "cantidad_usada": 150,
+                    "costo_material": 150,
+                    "unidad_medida": "mts"
+                }
+            ]
+        },
+        {
+            "id_producto": 5,
+            "id_categoria": 2,
+            "nombre_producto": "Huarache Tal n Pulsera",
+            "precio": 900,
+            "stock_disponible": 80,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 5,
+                    "descripcion": "Huarache tal n pulsera fresco",
+                    "talla": 41,
+                    "color": "Rosa"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 6,
+                    "id_material": 6,
+                    "cantidad_usada": 450,
+                    "costo_material": 450,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 14,
+                    "id_material": 14,
+                    "cantidad_usada": 50,
+                    "costo_material": 70,
+                    "unidad_medida": "uds"
+                }
+            ]
+        },
+        {
+            "id_producto": 6,
+            "id_categoria": 3,
+            "nombre_producto": "Huarache Tradicional",
+            "precio": 1300,
+            "stock_disponible": 40,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 6,
+                    "descripcion": "Huarache tradicional y cl sico",
+                    "talla": 39,
+                    "color": "Verde"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 7,
+                    "id_material": 7,
+                    "cantidad_usada": 550,
+                    "costo_material": 550,
+                    "unidad_medida": "ml"
+                },
+                {
+                    "id_producto_materiales": 15,
+                    "id_material": 16,
+                    "cantidad_usada": 1,
+                    "costo_material": 90,
+                    "unidad_medida": "litros"
+                }
+            ]
+        },
+        {
+            "id_producto": 7,
+            "id_categoria": 1,
+            "nombre_producto": "Huarache de Tac n",
+            "precio": 1600,
+            "stock_disponible": 25,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 7,
+                    "descripcion": "Huarache de tac n grueso",
+                    "talla": 44,
+                    "color": "Negro"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 8,
+                    "id_material": 7,
+                    "cantidad_usada": 2,
+                    "costo_material": 120,
+                    "unidad_medida": "uds"
+                },
+                {
+                    "id_producto_materiales": 16,
+                    "id_material": 17,
+                    "cantidad_usada": 200,
+                    "costo_material": 110,
+                    "unidad_medida": "mts"
+                }
+            ]
+        },
+        {
+            "id_producto": 8,
+            "id_categoria": 2,
+            "nombre_producto": "Huarache Chancla",
+            "precio": 300,
+            "stock_disponible": 300,
+            "descontinuados": 0,
+            "Detalles_Productos": [
+                {
+                    "id_detalle_producto": 8,
+                    "descripcion": "Huarache chancla tipo playero",
+                    "talla": 37,
+                    "color": "Rojo"
+                }
+            ],
+            "Productos_Materiales": [
+                {
+                    "id_producto_materiales": 9,
+                    "id_material": 8,
+                    "cantidad_usada": 3,
+                    "costo_material": 150,
+                    "unidad_medida": "uds"
+                },
+                {
+                    "id_producto_materiales": 17,
+                    "id_material": 18,
+                    "cantidad_usada": 150,
+                    "costo_material": 130,
+                    "unidad_medida": "uds"
+                }
+            ]
+        }
+    ]
+)

@@ -1,0 +1,31 @@
+//Usar la base de datos
+use("StylishSteps")
+
+
+//Crear la colección categorias
+db.createCollection("categorias", {
+    validator:{
+        $jsonSchema:{
+            bsonType: 'object',
+            title: 'Validación independiente de categorias, referenciada con productos.',
+            required: ['id_categoria'],
+            properties:{
+
+                id_categoria:{ 
+                    bsonType: 'int',
+                    description: 'Clave única de las categorias',
+                },
+
+                nombre_categoria:{ 
+                    bsonType: 'string',
+                    description: 'Nombre de la categoria',
+                },
+
+                descripcion:{
+                    bsonType: 'string',
+                    description: 'Descripcion de la categoria'
+                }     
+            }
+        }
+    }
+})
